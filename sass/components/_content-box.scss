@@ -1,0 +1,25 @@
+.content-box {
+    width: 80%;
+    margin: auto;
+
+    &__img {
+        clip-path: circle(50% at 50% 50%);
+        background-color: $color-primary;
+        width: 20rem;
+        height: 20rem;
+        margin-left: auto;
+        margin-right: auto;
+        background-size: cover;
+
+        &--1{
+            background-image: url(../img/portraitDog4.jpg);
+
+        }   
+        &--2{
+            background-image: url(../img/catPicture.jpg);
+        }
+        &--3{
+            background-image: url(../img/portraitDog5.jpg);
+        }
+    }
+}

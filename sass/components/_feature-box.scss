@@ -1,0 +1,35 @@
+.feature-box {
+    &:link, &:visited {
+
+        text-decoration: none;
+        color: $color-dark-blue;
+        transition: all .3s;
+        display: block;
+
+        h4 {
+            margin-top: 1rem;
+        }
+
+    }
+
+    &__img {
+        width: 100%;
+        border-radius: .5rem;
+    }
+
+    &:hover {
+        transform: translateY(-1rem) scale(1.05);
+    }
+    &:active{
+        transform: translateY(-0.8rem);
+
+    }
+
+
+
+    
+
+
+
+    
+}
