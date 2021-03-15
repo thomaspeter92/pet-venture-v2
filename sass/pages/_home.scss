@@ -5,14 +5,7 @@
 .section-2{
     margin-top: 10rem;
     padding: 10rem;
-    // background-image: linear-gradient(
-    //     to right bottom, 
-    //     rgba($color-primary, 0.8), 
-    //     rgba($color-primary-dark, 0.8));
-    // url(../img/heroImg.jpg);
-    // background-size: cover;
     background-color: rgb(233, 247, 255);
-    
 }
 
 .section-3 {
@@ -25,13 +18,18 @@
 }
 
 .section-5{
-    margin-top: 10rem;
-    margin-bottom: 5rem;
+    margin-top: 15rem;
+    margin-bottom: 15rem;
 
     img {
         width: 20rem;
     }
 }
 .section-6 {
-    margin-bottom: 5rem;
+    margin-bottom: 10rem;
+}
+.section-carousel {
+    margin: 10rem 0;
+    background-color: lightskyblue;
+
 }
