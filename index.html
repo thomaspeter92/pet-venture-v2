@@ -17,9 +17,9 @@
         <nav class="nav-main">
             <div class="nav-main__left">
                 <img src="img/logoPet.png" alt="Logo" class="nav-main__logo">
-                <h2 class="heading-title">
+                <h1 class="heading-title">
                     <span class="bolden-text">Pet</span><span class="lighten-text">Venture </span>
-                </h2>
+                </h1>
             </div>
             <div class="nav-main__right">
                 <ul class="nav-main__link-list">
@@ -38,14 +38,14 @@
                 </video>
             </div>
 
-            <div class="header__text-box">
-                <h1 class="heading-primary">
-                    <span class="heading-primary--main">Love your pets?</span>
-                    <span class="heading-primary--sub">so do we!</span>
-                </h1>
-
-                <a href="#" class="btn btn--white btn--animated">LEARN MORE</a>
-            </div>
+            <div class="form form--primary">
+                <h2 class="heading-primary u-center-text ">Love your pets? So do we!</h3>
+                <p class="paragraph u-center-text">Sign up now to learn how Pet Venture is the ideal service for every pet owner out ther and receive exclusive weekly offers from our partners.</p>
+                <div class="u-flex-row u-flex-row--between">
+                    <input type="text" class="form__input" placeholder="Enter your email...">
+                    <a href="#" class="btn btn--primary">Sign Up</a>
+                </div>   
+            </div>    
         </header>  
         <main>
             <section class="section-1">
@@ -161,12 +161,18 @@
             </section>
             <section class="section-carousel">
                 <p class="heading-tertiary">+20,000 Profiles</p>
-
-                <div class="profile-carousel">
-                        <div id="leftRightArrow"><i class="fas fa-arrow-circle-left leftArrow"></i> <i class="fas fa-arrow-circle-right rightArrow"></i></div>
-                        <div id="profileContainer">
-                            <h3>Profile preview carousel here, not added JS yet</h3>
-                        </div>
+                <div class="profile-carousel__arrows">
+                    <i class="fas fa-arrow-circle-left" id="leftArrow"></i> <i class="fas fa-arrow-circle-right" id="rightArrow"></i>
+                </div>
+                <div class="profile-carousel u-margin-top-big ">
+                    <div class="profile-carousel__container u-margin-bottom-med">
+                        <img class="profile-carousel__img" src="./img/carousel/profilePreview1.png" alt="">
+                        <img class="profile-carousel__img" src="./img/carousel/profilePreview2.png" alt="">
+                        <img class="profile-carousel__img" src="./img/carousel/profilePreview3.png" alt="">
+                        <img class="profile-carousel__img" src="./img/carousel/profilePreview4.png" alt="">
+                        <img class="profile-carousel__img" src="./img/carousel/profilePreview5.png" alt="">
+                        <img href="idex.php?action=registration" class="profile-carousel__img" src="./img/carousel/profilePreview6.png" alt="">
+                    </div>
                 </div>
             </section>
             <section class="section-5">
@@ -189,26 +195,13 @@
                 </div>
             </section>
             <section class="section-6">
-                <div class="form form--primary u-margin-auto">
-                    <div class="row">
-                        <div class="col-2-of-3">
-                            <h3 class="heading-tertiary heading-tertiary--white">Creating friendships & empowering pet owners</h3>
-                            <p class="paragraph paragraph--white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate, quaerat dolorum voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt iure culpa itaque perspiciatis nostrum accusantium doloribus veritatis accusamus voluptatibus inventore. Laboriosam adipisci qui tenetur officia odit modi numquam similique? Alias!</p>
-                            <div class="u-flex-row u-flex-row--between">
-                                <input type="text" class="form__input" placeholder="Enter your email...">
-                                <a href="#" class="btn btn--white">submit</a>
-                            </div>   
-                        </div>
-                        <div class="col-1-of-3">
-                            <img src="img/logoPet.png" alt="" class="form__img u-margin-auto">
-                        </div>
-                    </div>
-                </div>
+                
             </section>
         </main>
         <footer>
 
         </footer>
         
+        <script src="js/carousel.js"></script>
     </body>
 </html>

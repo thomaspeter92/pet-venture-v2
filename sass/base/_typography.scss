@@ -9,12 +9,15 @@ body {
 }
 
 .heading-primary {
-    color: $color-white;
+    color: $color-dark-blue;
     text-transform: uppercase;
+    font-size: 4rem;
+    font-weight: 900;
+
 
     /* Setting backface visibility to hidden prevents shake when running animations. There is no clear answer as to why this happens, but this is one fix. */
     backface-visibility: hidden; 
-    margin-bottom: 6rem;
+    // margin-bottom: 6rem;
 
     &--main {
         display: block;
@@ -87,6 +90,9 @@ body {
 
     &--white {
         color: $color-white;
+    }
+    &--grey {
+        color: $color-grey-dark;
     }
 }
 

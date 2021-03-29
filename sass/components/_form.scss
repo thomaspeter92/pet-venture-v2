@@ -1,19 +1,28 @@
 .form {
-    width: 80%;
     border-radius: 10px;
     padding: 3rem;
 
     &--primary {
         // background-image: linear-gradient(to bottom right, $color-primary-dark, $color-dark-blue);
         // background-color: $color-primary-dark;
-        background-image: linear-gradient(to bottom right, $color-primary-dark 60%,$color-primary 70%)
+        // background-image: linear-gradient(to bottom right, $color-primary-dark 60%,$color-primary 70%);
+        background-color: rgba($color-white, .85);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 50%;
+
+        .heading-secondary {
+            // color: $color-dark-blue;
+        }
     }
 
 
     &__input {
-        border-radius: 10px;
+        border-radius: 100px;
         padding: 1.5rem 4rem;
-        border: none;
+        border: 2px solid $color-primary;
         width: 75%;
         font-size: $default-font-size;
 

@@ -43,15 +43,16 @@ body {
   font-weight: 400;
   /* font-size: 16px; */
   line-height: 1.7;
-  color: #001B2F;
+  color: #00233D;
   padding: 3rem; }
 
 .heading-primary {
-  color: #fff;
+  color: #00233D;
   text-transform: uppercase;
+  font-size: 4rem;
+  font-weight: 900;
   /* Setting backface visibility to hidden prevents shake when running animations. There is no clear answer as to why this happens, but this is one fix. */
-  backface-visibility: hidden;
-  margin-bottom: 6rem; }
+  backface-visibility: hidden; }
   .heading-primary--main {
     display: block;
     font-size: 6rem;
@@ -78,7 +79,7 @@ body {
   letter-spacing: .2rem;
   transition: all .2s; }
   .heading-secondary--gradient {
-    background-image: linear-gradient(to right, #001B2F, #0BA3D5);
+    background-image: linear-gradient(to right, #00233D, #0BA3D5);
     -webkit-background-clip: text;
     color: transparent; }
 
@@ -101,6 +102,8 @@ body {
     margin-bottom: 3rem; }
   .paragraph--white {
     color: #fff; }
+  .paragraph--grey {
+    color: #777; }
 
 .bolden-text {
   font-weight: bolder; }
@@ -181,6 +184,8 @@ body {
   background-color: #0BA3D5;
   color: #fff; }
   .btn--primary::after {
+    background-color: #00233D; }
+  .btn--primary:hover {
     background-color: #0BA3D5; }
 
 .btn--animated {
@@ -358,7 +363,7 @@ body {
 
 .feature-box:link, .feature-box:visited {
   text-decoration: none;
-  color: #001B2F;
+  color: #00233D;
   transition: all .3s;
   display: block; }
   .feature-box:link h4, .feature-box:visited h4 {
@@ -375,15 +380,19 @@ body {
   transform: translateY(-0.8rem); }
 
 .form {
-  width: 80%;
   border-radius: 10px;
   padding: 3rem; }
   .form--primary {
-    background-image: linear-gradient(to bottom right, #0BA3D5 60%, #72ddf7 70%); }
+    background-color: rgba(255, 255, 255, 0.85);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%; }
   .form__input {
-    border-radius: 10px;
+    border-radius: 100px;
     padding: 1.5rem 4rem;
-    border: none;
+    border: 2px solid #72ddf7;
     width: 75%;
     font-size: 1.6rem; }
     .form__input:focus {
@@ -408,11 +417,31 @@ body {
 
 .profile-carousel {
   width: 100%;
-  height: 10rem; }
+  overflow: hidden;
+  position: relative; }
+  .profile-carousel__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    transition: ease-in-out .5s; }
+  .profile-carousel__img {
+    width: 50rem;
+    margin-right: 5rem;
+    border-radius: 1rem;
+    box-shadow: 5px 10px 18px #acacac; }
+  .profile-carousel__arrows {
+    position: absolute;
+    right: 1rem;
+    top: 0;
+    font-size: 5rem; }
+    .profile-carousel__arrows i {
+      border-radius: 100%;
+      line-height: 0; }
 
 .header {
   height: 100vh;
-  background-image: linear-gradient(to bottom, rgba(216, 244, 253, 0.7), rgba(11, 163, 213, 0.8));
+  background-image: linear-gradient(to bottom, rgba(216, 244, 253, 0.6), rgba(11, 163, 213, 0.6));
   background-size: cover;
   background-position: top;
   position: relative; }
@@ -450,10 +479,10 @@ body {
     width: calc( 3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); }
 
 .section-1 {
-  margin-top: 10rem; }
+  margin-top: 5rem; }
 
 .section-2 {
-  margin-top: 10rem;
+  margin-top: 5rem;
   padding: 10rem;
   background-color: #e9f7ff; }
 
@@ -464,15 +493,15 @@ body {
 .section-4 {
   margin-top: 10rem; }
 
+.section-carousel {
+  margin: 5rem 0;
+  position: relative; }
+
 .section-5 {
-  margin-top: 15rem;
-  margin-bottom: 15rem; }
+  margin-top: 5rem;
+  margin-bottom: 5rem; }
   .section-5 img {
     width: 20rem; }
 
 .section-6 {
   margin-bottom: 10rem; }
-
-.section-carousel {
-  margin: 10rem 0;
-  background-color: lightskyblue; }
