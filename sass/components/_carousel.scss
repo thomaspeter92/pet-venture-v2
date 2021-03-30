@@ -1,8 +1,18 @@
 .profile-carousel {
-    width: 100%;
-    overflow: hidden;
+    // width: 95%;
+    overflow-x: scroll;
     position: relative;
+    transition: scroll .5s;
+    padding: 0 5rem;
 
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    &__text {
+        margin-left: 5rem;
+        font-size: 3rem;
+    }
 
     &__container {
         display: flex;
@@ -17,17 +27,33 @@
         margin-right: 5rem;
         border-radius: 1rem;
         box-shadow: 5px 10px 18px #acacac;
+
+        &:last-child {
+            margin-right: 10rem;
+        }
+
+       
     }
     
     &__arrows {
         position: absolute;
-        right: 1rem;
-        top: 0;
+        right: 3rem;
+        top: 0rem;
         font-size: 5rem;
 
         & i {
             border-radius: 100%;
             line-height: 0;
+            transition: all .4s;
+
+
+            &:hover {
+                transform: scale(1.1);
+                box-shadow: 0 .5rem 1rem rgba($color-black, .9);
+                ;
+            }
         }
+
+        
     }
 } 

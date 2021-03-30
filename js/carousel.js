@@ -1,25 +1,34 @@
-var leftArrow = document.querySelector('#leftArrow');
-    var rightArrow = document.querySelector('#rightArrow')
-    var profileContainer = document.querySelector('.profile-carousel__container')
-    let translateLeft = 0
-    leftArrow.addEventListener('click', function() {
-        if(translateLeft == 0) {
-            console.log('hi')
+let leftArrow = document.querySelector('#leftArrow');
+let rightArrow = document.querySelector('#rightArrow')
+let profileCarousel = document.querySelector('.profile-carousel')
 
-        return null;
-        } else {
-            translateLeft -= 650;
-            profileContainer.style.transform = `translateX(-${translateLeft}px)`;
-            console.log(translateLeft);
-        }
-    })
-    rightArrow.addEventListener('click', function(){
-        if(translateLeft >= 1300) {
-            console.log('hi')
-            return null;
-        } else {
-            translateLeft += 650;
-            profileContainer.style.transform = `translateX(-${translateLeft}px)`;
-            console.log(translateLeft);
-        }
-    })
+let scrollAmount = 0;
+let scrollMin = 0
+let scrollMax = profileCarousel.clientWidth
+
+leftArrow.addEventListener('click', function() {
+
+    if(scrollAmount == scrollMin) return null;
+
+    scrollAmount -= 500;
+
+    profileCarousel.scrollTo({
+        top: 0,
+        left: scrollAmount,
+        behavior: 'smooth'
+      });
+
+})
+rightArrow.addEventListener('click', function(){
+
+    if(scrollAmount >= scrollMax) return null;
+
+    scrollAmount += 500;
+
+    profileCarousel.scrollTo({
+        top: 0,
+        left: scrollAmount,
+        behavior: 'smooth'
+      });
+
+})
